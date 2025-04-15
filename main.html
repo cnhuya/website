@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vstup do Webu 3.0</title>
+    <a href="https://www.flaticon.com/free-icons/book" title="icons">Icons created by Flaticon</a>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    </head>
+</head>
+
+<body>
+    <canvas id="animated-background"></canvas>
+    <main>  
+        <div class="welcome">
+            <h1>WEB 3.0</h1>
+            <div class="quotes">
+                 <h2 id="quote"></h2> 
+                 <div class="source">
+                    <h3 id="author"></h3>
+                    <span id="source-link-container"></span> 
+                </div>
+            </div>
+       </div>
+        <div class="panels1 row">
+            <div class = "panel">
+                <div class="panel-header">
+                    <img src="/icons/welcome.png">
+                    <h5>Úvod do Webu 3.0</h5>
+                </div>
+                <div class="panel-content">
+                    <p>Podrobné vysvětlení, co Web 3.0 představuje, jeho hlavní principy a moderní technologie. Zjistíte, jak se liší od předchozích verzí, Webu 2.0 a Webu 1.0, a nové možnosti pro uživatele i vývojáře.</p>
+                    <a href="uvod.html"><button>Vstoupit</button></a>
+                </div>
+            </div>            
+            <div class = "panel">
+                <div class="panel-header">
+                    <img src="/icons/trade.png">
+                    <h5>Obchodování</h5>
+                </div>
+                <div class="panel-content">
+                    <p>Od úplných základů obchodování až po pokročilé  algoritmy pro identifikaci trendů a následné spekulace nad cenou kryptoměn. Zahrnuje praktické kroky i hlubší analýzu pro efektivní rozhodování.</p>
+                    <a href="obchodovani.html"><button>Vstoupit</button></a>
+                </div>
+            </div>
+            <div class = "panel">
+                <div class="panel-header">
+                    <img src="/icons/investing.png">
+                    <h5>Investovní</h5>
+                </div>
+                <div class="panel-content">
+                    <p>Představíme Vám všechny možnosti, jak investovat na Webu 3.0. Od jednoduchých a téměř bezrizikových strategií až po pokročilé taktiky, které mohou přinést vyšší zisky, ale zároveň nesou větší míru rizika</p>
+                    <a href="investovani.html"><button>Vstoupit</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="panels2 row">
+            <div class = "panel">
+                <div class="panel-header">
+                    <img src="/icons/tips.png">
+                    <h5>Tipy & Triky</h5>
+                </div>
+                <div class="panel-content">
+                    <p>Tipy a triky, které vám nejen usnadní práci a ušetří peníze na poplatcích, ale zároveň nabídnou praktické rady pro vaši bezpečnost a efektivní pohyb v prostředí Webu 3.0.</p>
+                    <a href="tips.html"><button>Vstoupit</button></a>
+                </div>
+            </div>
+            <div class = "panel">
+                <div class="panel-header">
+                    <img src="/icons/settings.png">
+                    <h5>Nástroje</h5>
+                </div>
+                <div class="panel-content">
+                    <p>Užitečné aplikace pro snadnější práci s Webem 3.0 – zahrnuje nástroje pro automatické vygenerování chytrých kontraktů, simulaci obchodujících algoritmů a mnoho dalšího.</p>
+                    <a href="nastroje.html"><button>Vstoupit</button></a>
+                </div>
+            </div>
+            <div class = "panel">
+                <div class="panel-header">
+                    <img src="/icons/vocab.png">
+                    <h5>Slovníček</h5>
+                </div>
+                <div class="panel-content">
+                    <p>Seznam pojmů, se kterými se můžete setkat při obchodování nebo při orientaci ve světě Webu 3.0. Obsahuje odborné termíny a jejich vysvětlení pro lepší porozumění.</p>
+                    <a href="slovnicek.html"><button>Vstoupit</button></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="krypto panel">
+            <div class="box" id ="btc">
+                <img src="icons/btc.png">
+                <h6>Bitcoin</h6>
+            </div>
+            <div class="box" id="eth">
+                <img src="icons/eth.png">
+                <h6>Ethereum</h6>
+            </div>
+            <div class="box" id="sol">
+                <img src="icons/solana.png">
+                <h6>Solana</h6>
+            </div>
+        </div>
+        <div id="chart">
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+   
+
+    <script src="charts.js"></script>
+    <script src="js/randomQuotes.js"></script>
+</body>
+</html>

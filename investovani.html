@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vítejte | WEB 3.0</title>
+    <link rel="stylesheet" href="investovani.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+</head>
+<!-- trosku jeste poupravit strukturu, vic prehlednejsi atd...-->
+<body>
+    <canvas id="animated-background"></canvas>
+    <main id="main">  
+        <div class="panels1 panel">   
+            <a href ="main.html"><img src="/icons/home.png"></a>
+            <h2> Investování</h2>   
+        </div>
+        <div class="menu panel">       
+            <h2 class="selected" data-target="panel-verze">Základní investiční strategie</h2>    
+            <h2 data-target="panel-technologie">Pokročilé investiční stragie</h2>    
+        </div>
+        <div class="content">
+            <div class="panel-verze content-panel active">
+                <div class="box">
+                    <div class="header-container">
+                        <h3>HODL </h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Nejjednodušší, avšak poměrně výdělečná strategie, je pouhé nakoupení a čekání, až cena daného produktu vyroste. K této strategii se vztahují dva termíny: Paper Hands a Diamond Hands. Paper Hands je termín, kterým se označuje investor, který nevydržel držet produkt déle a prodal ho s menším ziskem, tedy propásl maximální potenciál zisku. Diamond Hands je přesný opak – jde o termín, kdy investor prodá produkt ve správný čas před jeho cenovým propadem.</p>
+                        <div class="img-container">
+                            <img src="icons/PAPER_DIAMOND_HANDS_example.png">
+                            <a href="https://nayibtracker.com/">Ukázka Paper Hands vs Diamond Hands </a>
+                        </div>
+                        <p>Jak lze spatřit na snímku výše, pokud bychom prodali později a vydrželi hodlovat, náš zisk by činil zhruba o 180 % více. Ovšem tento scénář je téměř nereálný a vyplatí se spíše postupně prodávat malé částky.</p>
+                    </div> 
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                        <h3>DCA </h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Neboli Dollar Cost Averaging (DCA), je strategie, při které průměrujete cenu vašeho nákupu tím, že automaticky nakupujete danou kryptoměnu, akcii nebo jiné finanční produkty. Tato strategie je poměrně často využívána dlouhodobými investory. Například El Salvador adoptoval tuto strategii pro každodenní nákup bitcoinu do státních rezerv. Tato strategie je výhodná i z pohledu cenového růstu daného produktu, jelikož nakupujete i když cena roste či klesá, čímž se oproti druhé možné strategii níže minimalizuje riziko nákupu na vrcholu ceny.</p>
+                        <div class="img-container">
+                            <img src="icons/DCA_example.png">
+                            <a href="https://nayibtracker.com/">Ukázka El Salvadorské DCA strategie </a>
+                        </div>
+                        <div class="sub-info">
+                            <p>Oranžové kruhy znázorňují jednotlivé větší nákupy.</p>
+                            <p>Modrá čára zobrazuje historickou cenu bitcoinu.</p>
+                            <p>Zelená silnější čára zobrazuje zprůměrovanou nákupní cenu.</p>
+                            <p>Zelená slabší čára zobrazuje zprůměrovanou cenu jednotlivých větších nákupů.</p>                            
+                        </div>
+                    </div> 
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                        <h3>Dip Buying </h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Neúplně přeloženo do češtiny, tato strategie je známá jako "chytání padajícího nože". Spočívá v nakupování daného produktu při každém cenovém propadu, bez ohledu na jakékoliv jiné okolnosti. Většina začínajících obchodníků si myslí, že tato strategie je nevýdělečná, což ale není pravda. Žádná strategie negarantuje zisk. Tuto strategii se spíše vyplatí aplikovat na produkty, které jsou na trhu již dobře známé a mají obrovský tržní kapitál.</p>
+                        <div class="img-container">
+                            <img src="icons/DIP_example.png">
+                            <a href="https://www.bybit.com/en/trade/spot/STRK/USDT">Ukázka nevýhodné Dip buying strategie </a>
+                        </div>
+                        <p>Existuje také tzv. margin/double down dip buying strategie, která spočívá v tom, že při každém následujícím nákupu zvýšíte svůj nákup o dvojnásobek nebo třeba pouze o 50 %. Tato strategie však také negarantuje zisk, ale teoreticky by měla být výdělečnější. Za předpokladu, že máte dostatek finančních rezerv a jste ochotní více riskovat. Berte prosím na vědomí, že není pravidlem, že cena dané komodity půjde vždy nahoru; po celou svou existenci může jít cena i níže a níže...</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="panel-technologie content-panel">
+                <div class="box">
+                    <div class="header-container">
+                        <h3>Staking</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Česky stakování je investiční strategie, která funguje pouze u kryptoměn. Některé kryptoměny podporují stakování, které by mělo podpořit stabilitu kryptoměny, jelikož investoři nakoupí danou kryptoměnu a poté ji vloží nejčastěji do "banky", která má často časový limit pro vybrání vložené kryptoměny. Některé kryptoměny ale podporují i tzv. liquid staking, za vaši kryptoměnu dostanete kryptoměnu, která má stejnou nebo větší cenu (záleží na typu liquid stakingu). Buď se liquid stakování odrazí v ceně liquid kryptoměny, nebo dostáváte navíc danou liquid kryptoměnu.</p>
+                        <div class="img-container">
+                            <img src="icons/STAKING_example.png">
+                            <a href="https://springsui.com/">Rozhrání stránky, která vlastní liquid staking kryptoměnu SpringSui, původní kryptoměnou je Sui</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                        <h3>Yield Stable Coins</h3>
+                </div>
+                   <div class="text-container">
+                      <p>Jak už lze poznat z názvu, jedná se o tzv. stablecoiny, neboli kryptoměny, které mají stále stejnou cenu. Ovšem existují i stablecoiny, které když vlastníte, tak získáváte pasivní příjem. Říkáte si, jak to funguje? Následovně: Jedná se o centralizovaného poskytovatele, kterému ve zkratce "půjčíte" peníze, a on vám za to dá "falešný" dolar, který má sice stále hodnotu 1 $. Peníze, které jste půjčili danému poskytovateli, investuje do různých produktů, jako jsou dluhopisy či jiné investice. Dá se tedy říct, že se jedná o vložení/půjčení peněz instituci, která za vás investuje.</p>
+                        <div class="img-container">
+                            <img src="icons/YIELD_STABLE_COIN_example.png">
+                            <a href="https://app.ethena.fi/dashboards/apy">Rozhrání stránky, která nabízí Yield Stable Coin s 8-10% APY</a>
+                        </div> 
+                </div>
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                        <h3>Lending</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Neboli česky půjčování. Web 3.0 dosáhl už takových rozměrů, že své kryptoměny můžete volně půjčovat ostatním uživatelům, a to vše DECENTRALIZOVANĚ za pomocí chytrých kontraktů.</p>
+                        <div class="img-container">
+                            <img src="icons/Lending_example.png">
+                            <a href="https://suilend.fi/">Rozhrání stránky, která nabízí Yield Stable Coin s 8-10% APY</a>
+                         </div> 
+            </div>
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                        <h3>Liquidity Mining</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Tato strategie zahrnuje přidávání likvidity do tzv. bazénů, nejčastěji na decentralizovaných platformách, ovšem i některé centralizované platformy či burzy umožňují uživatelům získávat kryptoměny, do kterých přidali likviditu.</p>
+                            <div class="img-container">
+                                <img src="icons/pools_example.png">
+                                <a href="https://vfat.io/yield">Rozhrání stránky, která nabízí Yield Stable Coin s 8-10% APY</a>
+                            </div> 
+                            <p>Ovšem při poskytování likvidity si musíme dát pozor na tzv. Impermanent Loss. Jedná se o proces, kdy můžeme přijít o jednu ze dvou přidaných kryptoměn. Sice získáme více kryptoměny, která má menší hodnotu, což znamená, že přijdeme o jednu kryptoměnu za zisk druhé kryptoměny, která ztratila hodnotu oproti té první.</p>
+                    </div>    
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                    <h3>Hedge Funding</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Jedná se o jednu z nejpokročilejších strategií. Tato strategie spočívá v tom, že otevřeme short pozici na derivátovém trhu a zároveň nakoupíme danou kryptoměnu na spotovém trhu. Tuto strategii lze aplikovat, jelikož derivátové trhy poskytují dané menšině funding v intervalech, aby zamezili příliš velkému výkyvu ceny kontraktu oproti reálné ceně kryptoměny.</p>
+                        <div class="img-container">
+                            <img src="icons/funding_example.png">
+                            <a href="https://helixapp.com/futures/inj-usdt-perp/">Derivátová decentralizovaná burza Helix.</a>
+                        </div> 
+                    </div>    
+                </div> 
+            </div> 
+        </div>
+    </main>
+    <script src="randomQuotes.js"></script>
+    <script src="particles.js"></script>
+    <script src="swap.js"></script>
+</body>
+</html>

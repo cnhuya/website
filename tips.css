@@ -1,0 +1,235 @@
+/* -----------------*/
+/*   Main Content   */
+/* -----------------*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.panels1 {
+  width: 80%;
+  height: 10%;
+}
+
+.panels1, .menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}  
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 80%;
+  
+}
+
+.sub {
+  padding-left: 2rem;
+}
+
+
+
+.box-symbols{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+  gap: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%; /* Add this line*/
+  height: auto;
+  align-items: center;
+  text-align: center;/* Add this line*/
+}
+
+.box-symbols.row{
+  align-items: center;
+  margin: auto;
+  width: 100%; /* Add this line*/
+  display: flex;
+  justify-content: center;
+}
+
+.box-symbols.row div{
+min-height: 11rem;
+width: 100%;
+justify-content: center;
+align-items: center;
+}
+
+
+
+
+
+
+.box-symbols a{
+  text-decoration: none;
+}
+
+
+
+
+.hover:hover {
+  filter: brightness(125%); 
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+a:hover{
+  cursor: pointer;
+}
+
+.box-symbols h4 {
+  font-size: 1.5rem;
+}
+
+#bybit{
+  background: linear-gradient(to bottom, rgb(255, 150, 30) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#binance{
+  background: linear-gradient(to bottom, rgb(238, 255, 0) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#bitget{
+  background: linear-gradient(to bottom, rgb(17, 255, 195) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#spot{
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#risk{
+  background: linear-gradient(to bottom, rgb(255, 91, 140) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#degen{
+  background: linear-gradient(to bottom, rgb(227, 17, 255) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-container h3 {
+  font-size: 1.5rem;
+}
+
+.header-container {
+  border-bottom: 1px solid gray;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.header-container a{
+text-decoration: none;
+padding: 0;
+margin-top: 0.5rem;
+text-align: center;
+color: var(--hover-text-color);
+
+}
+
+.text-container {
+  margin-top: 1rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container h2{
+  padding-top: 2rem;
+}
+
+
+
+
+.text-container h4{
+  margin-left: -1rem;
+  margin-bottom: 0.5rem;
+  margin: 1rem;
+}
+
+
+
+.text-container img{
+  width: 80%;
+  height: 50%;
+  position: relative;  
+  margin: 1rem;
+
+}
+
+
+#wallet-img{
+  width: 50%;
+  height: 5%;
+  position: relative;  
+  margin: 1rem;
+}
+
+
+#bybit-panel:hover{
+  border: 1px, solid, rgba(255, 150, 30, 0.1);
+}
+
+#binance-panel:hover{
+  border: 1px, solid, rgba(238, 255, 0, 0.1);
+}
+
+
+#bitget-panel:hover{
+  border: 1px, solid, rgba(17, 255, 195, 0.1);
+}
+
+
+
+a{
+  padding-bottom: 1rem;
+}
+
+a:hover{
+  color: var(--hover-text-color);
+  text-decoration: none;
+}
+
+.symbols{
+  border-radius: 5px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: var(--panels-color);
+  opacity: 0.75;
+  padding: 1rem;
+}

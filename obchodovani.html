@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vítejte | WEB 3.0</title>
+    <link rel="stylesheet" href="obchodovani.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+</head>
+<!-- trosku jeste poupravit strukturu, vic prehlednejsi atd...-->
+<body>
+    <canvas id="animated-background"></canvas>
+    <main id="main">  
+        <div class="panels1 panel">   
+            <a href ="main.html"><img src="/icons/home.png"></a>
+            <h2> Obchodování</h2>   
+        </div>
+        <div class="menu panel">       
+            <h2 class="selected" data-target="panel-verze">Druhy trhu</h2>    
+            <h2 data-target="panel-technologie">Jak na obchodování</h2>    
+            <h2 data-target="panel-možnosti">Obchodovací strategie</h2>    
+        </div>
+        <div class="content">
+            <div class="panel-verze content-panel active">
+                <div class="box">
+                    <div class="header-container">
+                        <h3>Spotový trh</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Za spotový trh lze považovat jakýkoliv finanční trh, na kterém se obchoduje s hodnotnými aktivy, jako jsou například komodity, měny, akcie, kryptoměny či jiné produkty. Obchodování probíhá za aktuální tržní cenu daného produktu. Při obchodování na spotovém trhu se nemusíte obávat úplné likvidace pozice či dokonce ztráty celého účtu, na rozdíl od jiných forem obchodování, o kterých se také dozvíte v této sekci.</p>
+                        <div class="box-symbols row">
+                            <div class="symbols">
+                                <h4>Vhodný pro</h4>
+                                <p>Dlouhodobé investory</p>
+                                <p>Začínající obchodníky</p>
+                                <p>Pro ochodníky, kteří neradi riskují</p>
+                            </div>
+                            <div class="symbols">
+                                <h4 class="positive">Výhody</h4>
+                                <p>Poměrně nízké riziko</p>
+                                <p>Žádna likvidace</p>
+                                <p>Menší stres</p>
+                            </div>
+                            <div class="symbols">
+                                <h4 class="negative">Nevýhody</h4>
+                                <p>Menší možný zisk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                        <h3>Trh derivátů</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Za trh typu derivát se považuje jakýkoliv trh, který umožňuje obchodníkům vytvářet větší pozice, než kolik činí jejich skutečný kapitál, a to za pomoci páky (leverage). Derivátový trh se využívá především k obchodování kryptoměn nebo reálných měn, jako je euro či americký dolar. Tento trh je specifický tím, že je možné "prodat" měnu, kterou nevlastníte – tomuto principu se říká shortování; jeho opakem je longování.</p>
+
+<p>Princip je následující: Máme počáteční kapitál 5 000 Kč a spekulujeme, že cena eura oproti dolaru klesne. Vytvoříme tedy short pozici s hodnotou 100 000 Kč na měnovém páru EUR/USD s pákou 20×. Pokud cena eura klesne o 1 % vůči dolaru, dosáhneme zisku 1 000 Kč, tedy 20 %. Naopak, pokud by cena eura vzrostla o více než 5 %, naše celá pozice by byla zlikvidována – o celý kapitál bychom přišli.</p>
+
+                        <div class="box-symbols row">
+                            <div class="symbols">
+                                <h4>Vhodný pro</h4>
+                                <p>Krátkodobé investory</p>
+                                <p>Zkušené obchodníky</p>
+                                <p>Pro ochodníky, kteří se nebojí velkých ztrát</p>
+                                <p>Pro hedge strategie</p>
+                            </div>
+                            <div class="symbols">
+                                <h4 class="positive">Výhody</h4>
+                                <p>Vyšší možný zisk</p>
+                                <p>Efektivita kapitálu</p>
+                                <p>Lze "prodat" i nevlastněnou kryptoměnu</p>
+                            </div>
+                            <div class="symbols">
+                                <h4 class="negative">Nevýhody</h4>
+                                <p>Mnohonásobně vyšší riziko</p>
+                                <p>Stres, nejistota</p>
+                                <p>Možnost úplné likvidace</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=box>
+                    <div class="header-container">
+                        <h3>Trh opcí</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Trh, kde se obchoduje s opcemi. Opce je speciální smlouva, která udává kupujícímu právo, ale né povinnost, k vykonání prodeje či koupi daného aktiva, za předem stanovenou cenu k určenemé datu. I v trhu s opcemi se říká jinak nakupování a prodávání, nakupování se říká call a prodávání se říká put</p>
+                        <div class="box-symbols row">
+                            <div class="symbols">
+                                <h4>Vhodný pro</h4>
+                                <p>Zkušené investory</p>
+                                <p>Flexibilní a zkušené obchodníky</p>
+                                <p>Pro hedge strategie</p>
+                            </div>
+                            <div class="symbols">
+                                <h4 class="positive">Výhody</h4>
+                                <p>Pouze právo kupujícího</p>
+                                <p>Lze "prodat" i nevlastněnou kryptoměnu</p>
+                            </div>
+                            <div class="symbols">
+                                <h4 class="negative">Nevýhody</h4>
+                                <p>Vysoce komplexní</p>
+                                <p>Ztráta premiové hodnoty při odmítnutí</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=box>
+                    <div class="header-container">
+                        <h3>Futures trh</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Futures trh je trh, kde se spekuluje na budoucí cenu stanoveného kontraktu. Obchodník MUSÍ uskutečnit předem dohodnutý obchod po uplynutí smluvního období. Například: Pokud spekulujeme, že cena bitcoinu za rok překročí 150 000 USD za 1 bitcoin, můžeme nakoupit futures kontrakt s vypršením za jeden rok. Obecně platí, že čím delší je doba do vypršení kontraktu, tím vyšší je jeho cena. To je způsobeno různými faktory, jako je inflace nebo riziko spojené s tím, aby kontrakt nebyl pro prodávajícího příliš ztrátový.</p>
+
+                        <div class="box-symbols row">
+                            <div class="symbols">
+                                <h4>Vhodný pro</h4>
+                                <p>Krátkodobé investory</p>
+                                <p>Zkušené obchodníky</p>
+                                <p>Pro ochodníky, kteří se nebojí velkých ztrát</p>
+                                <p>Pro hedge strategie</p>
+                            </div>
+                            <div class="symbols">
+                                <h4 class="positive">Výhody</h4>
+                                <p>Vyšší možný zisk</p>
+                                <p>Lze "prodat" i nevlastněnou kryptoměnu</p>
+                            </div>
+                            <div class="symbols">
+                                <h4 class="negative">Nevýhody</h4>
+                                <p>Mnohonásobně vyšší riziko</p>
+                                <p>Stres, nejistota</p>
+                                <p>Stanovený termín vykonání obchodu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-technologie content-panel">
+                <div class="box">
+                    <div class="header-container">
+                        <h3>1. Vybrání vhodné burzy</h3>
+                    </div>
+                    <div class="text-container">
+                        <div class="sub-text"></div>
+                        <p>Základem cesty k obchodování je výběr vhodné burzy, ideálně certifikované a důvěryhodné. Daná burza by neměla mít žádné skandály ani být spojována s kontroverzemi. Dále je důležité zkontrolovat poplatky burzy – některé si účtují až nepřiměřeně vysoké částky. Následně je dobré se zaměřit na funkce burzy: jaké trhy burza podporuje, zda umožňuje pouze spotové obchodování, nebo i jiné typy trhů. Zda podporuje efektivnější využití kapitálu (například možnost vytvářet pozice i s kryptoměnami, které nejsou stabilní jako USDC nebo USDT), půjčování kryptoměn a další pokročilé funkce.</p>
+
+                            <div class="box-symbols row">
+                            <a href="https://www.bybit.com/"><div id="bybit-panel" class="symbols hover">
+                                <h4 id="bybit"> 1. Bybit</h4>
+                                    <p> Funguje již od roku 2018</p>
+                                    <p> Hodnocení 4.7 na Google appstore</p>
+                                    <p> Celkově jedny z nejmenších poplatků</p>
+                                    <p> Bez limitní společný účet kryptoměn na obchodování</p>
+                                </div>
+                            </a>
+                            <a href="https://www.binance.com/"><div id="binance-panel" class="symbols hover">
+                                    <h4 id="binance"> 2. Binance</h4>
+                                    <p> Funguje již od roku 2017</p>
+                                    <p> Hodnocení 4.6 na Google appstore</p>
+                                    <p> Poměrně nízké poplatky</p>
+                                    <p> Limit na společný účet kryptoměn na obchodování</p>
+                                </div>
+                            </a>
+                            <a href="https://www.bitget.com/"> <div id="bitget-panel" class="symbols hover">
+                                    <h4 id="bitget"> 3. Bitget</h4>
+                                    <p> Funguje již od roku 2018</p>
+                                    <p> Hodnocení 4.4 na Google appstore</p>
+                                    <p> Poměrně  nízké poplatků</p>
+                                    <p> Limit na společný účet kryptoměn na obchodování</p>
+                                </div> 
+                            </a>
+                            </div> 
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                        <h3>2. Jakým typem obchodníka chci být?</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Každý si musí sám určit, zda má dostatečně pevné nervy a je odolný vůči stresu. Jsi ochoten přijít o všechno během několika minut, nebo naopak vydělat několikanásobek během stejné doby? Pak je pro tebe vhodný styl derivátového obchodníka. Pokud však nerad riskuješ, spotový trh tě určitě rád přivítá. Máš povahu gamblera? Baví tě adrenalin? V tom případě by tě mohla zaujmout speciální sekce zvaná Degen trader.</p>
+                            <div class="box-symbols row">
+                                <div id="spot-panel" class="symbols">
+                                    <h4 id="spot"> Long-term </h4>
+                                    <p> Nejčastěji obchoduje na spotovém trhu</p>
+                                    <p> Maximálně 2-3x páka</p>
+                                    <p> Obvykle týdenní až měsíční obchody </p>
+                                    <p> Menší zisk, ale menší risk</p>
+                                </div>
+                                <div id="risk-panel" class="symbols"> 
+                                    <h4 id="risk"> Intra-day </h4></a>
+                                    <p> Nejčastěji obchoduje na derivátovém trhu</p>
+                                    <p> Maximální páka do 10x</p>
+                                    <p> Obvykle denní někdy i týdenní obchody</p>
+                                    <p> Větší zisk, větší risk</p>
+                                </div>
+                                <div id="degen-panel" class="symbols">
+                                    <h4 id="degen"> Scalper</h4>
+                                    <p> Nejčastěji obchoduje na derivátovém trhu</p>
+                                    <p> Páka od 10x do xxxx</p>
+                                    <p> Obvykhle minutové až hodinové obchody</p>
+                                    <p> Extremní zisk, extremní risk</p>
+                               </div>
+                            </div>
+                    </div>      
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                        <h3>3. Mentalita</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Mentalita je jednou z nejdůležitějších věcí v obchodování. Trpělivost je klíčová vlastnost, která je nezbytná pro to, abyste se stal úspěšným obchodníkem. Zisk několikanásobně větší než váš počáteční kapitál se vám nepovede získat ze dne na den, pravděpodobně ani po roce obchodování, pokud tedy nebudete mít opravdu štěstí. Studie prokázaly, že pouze 2 % začínajících obchodníků jsou po roce výděleční, a po uplynutí 3 let se jedná o zhruba 20 % úspěšných obchodníků. Proto je důležité být trpělivý a jednat s chladnou hlavou. Jednou z dalších vlastností, kterou by měl obchodník mít, je schopnost se ovládat a nejednat v afektu. Většina obchodníků totiž prodává, když je cena nízko, a naopak kupuje, když je cena vysoká. Mozek si toto pravidlo určuje sám, ale abyste se stal úspěšným obchodníkem, musíte jít proti své vlastní intuici. V obchodování je totiž často lepší se řídit opačně než trh. To znamená, že pokud cena rapidně klesá, je vhodné naplánovat si, kde chcete nakupovat. Obecně platí, že čím větší a rychlejší cenový pokles, tím následně rychlejší růst. O této problematice se ale dozvíte více v následující sekci.</p>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                        <h3>4.Zvolení strategie</h3>
+                    </div>
+                    <div class="text-container">
+                        <p> Jako poslední krok následuje zvolení správné strategie, která Vám bude nejvíce vyhovovat. Můžete se vydat několika směry. Můžete například obchodovat pomocí indikátoru, jako je RSI, což je indikátor, který identifikuje sílu a rychlost pohybu trhu.</p>
+                        <div class="img-container">
+                            <img src="icons/RSI_example.png">
+                            <a href="https://www.bybit.com/trade/futures/usdc/BTC-26DEC25">Ukázka RSI indikátoru</a>
+                        </div>
+                        <p> Nebo můžete používat strategii "dip buy". Dip buy strategie, neboli chytání padajícího nože, spočívá v tom, že kupujete při každém poklesu ceny. Poměrně velké procento obchodníků si myslí, že při použití této strategie se nedá snad ani prodělat, ale to je pouze mylná představa. Některé kryptoměny se totiž nemusí nikdy zotavit z cenového pádu. Viz obrázek níže.</p>
+                        <div class="img-container">
+                            <img src="icons/propad_example.png">
+                            <a href="https://coinmarketcap.com/currencies/starknet-token/">Ukázka propadu ceny kryptoměny Starknet od jejího vzniku</a>
+                        </div>
+                        <p> Ovšem strategií existuje miliony. Pokud Vás zajímá více o strategiích a jak se stát úspěšným výdělečným obchodníkem, tak prosím směřujte do následující sekce "Obchodovací strategie".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-možnosti content-panel">
+                <div class="box">
+                    <div class="header-container">
+                        <h3>Indikátory </h3>
+                    </div>
+                    <div class="text-container">
+                        <p> Indikátorů k obchodování existují stovky. Berte ale na vědomí, že žádný z indikátorů neumí předpovědět cenu se 100% úspěšností. Indikátory se pouze řídí cenami z minulosti a na jejich základě se snaží předpovědět následující pohyb. Také berte na vědomí, že indikátory jsou pomalejší než aktuální vývoj ceny, jelikož jak bylo předem zmíněno, berou data z historie.</p>
+                        <h4> Multiple Moving Average</h4>
+                        <p> Tento indikátor spočívá nejčastěji v zobrazení čáry průměrné ceny za určitý časový interval. Nejvíce se využívají dvě nebo tři tyto čáry zároveň na jednom grafu. Pokud čára s nejmenším časovým intervalem překročí dvě zbylé čáry, jedná se o signál k nákupu. Jistě vám poté dojde, že signál k prodeji funguje přesně opačně, tedy když nejrychlejší čára (s nejnižším časovým intervalem) překročí středně rychlou a nejpomalejší moving average.</p>
+                        <div class="img-container">
+                            <img src="icons/MA_example.png">
+                            <a href="https://www.bybit.com/en/trade/spot/VIRTUAL/USDT">Ukázka Triple Moving Average indikátoru </a>
+                        </div>
+                        <p> Nejčastější nastavení tohoto indikátoru je 9, 21 a 55 (viz snímek). Ovšem toto nastavení lze měnit a experimentovat s ním. Zpravidla platí, že čím více historických agresivních výkyvů ceny dané komodity, tím je vhodnější nastavit kratší historické intervaly.</p>
+                        <h4> RSI & Stochastic RSI</h4>
+                        <p> Neboli Relative Strength Index, je indikátor, který udává sílu pohybu ceny. Stochastic RSI lze poté přirovnat částečně k strategii Moving Average, co se týče překřížení čár, jelikož tento indikátor zobrazuje 2 RSI čáry, místo jedné.</p>
+                        <div class="img-container">
+                            <img src="icons/RSI_example.png">
+                            <a href="https://www.bybit.com/en/trade/spot/SOL/USDT">Porovnání RSI a Stochaic RSI indikátorů </a>
+                        </div>
+                        <p> Na obrázku výše lze vidět rozdíly mezi RSI a Stochastic RSI indikátory. Stochastic RSI indikátor také reaguje agresivněji na menší výkyvy ceny, to lze ale změnit v nastavení indikátoru, konkrétně zvýšením hodnot smoothK & smoothD.</p>
+                        <h4> Bollinger Bands</h4>
+                        <p> Neboli Relative Strength Index, je indikátor, který udává sílu pohybu ceny. Stochastic RSI lze poté přirovnat částečně k strategii Moving Average, co se týče překřížení čár, jelikož tento indikátor zobrazuje 2 RSI čáry, místo jedné.</p>
+                        <div class="img-container">
+                            <img src="icons/BB_example.png">
+                            <a href="https://www.bybit.com/en/trade/spot/DOGE/USDT">Ukázka Boolinger Bands indikátoru</a>
+                        </div>
+                        <p> Jak lze vidět výše na obrázku, indikátor Bollinger Bands funguje složitěji. Bollinger Bands indikátor vytváří 3 objekty: horní a spodní kanály, které nám pomáhají identifikovat trend trhu. Pokud se cena nachází v horním kanálu, jde trend směrem nahoru, a naopak pokud se nachází ve spodním kanálu, jsme v tzv. downtrendu. Také jak si můžete všimnout, vytváří čáru, která je Moving Average. Obchodovat lze různě pomocí tohoto indikátoru. Zpravidla platí, že pokud se kanály k sobě přibližují, cena se brzy „utrhne ze řetězu“ a dojde k dynamickému a agresivnějšímu pohybu. Lze také obchodovat způsobem, že pokud cena přeteče z kanálu, vytvoříme opačnou pozici, čili pokud cena při růstu přeteče z kanálu pro uptrend, jedná se o tzv. maximální FOMO a cena nejčastěji začne klesat.</p>
+
+                    </div> 
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                        <h3>Smart money flow </h3>
+                    </div>
+                    <div class="text-container">
+                            <p> Tato zpočívá o reagování na aktuální pohyb marketu a a na tzv. penězní flow, tedy se snažíme obchodovat zároveň s velkými hráči. Tato strategie je nejpokročilejší avšak nejpřesnější pokud ji standartně aplikujeme. Zároveň se jedná i o nejrychlejší stategii co se týče reakce na cenu trhu, jelikož reagujeme s trhem. Opět existuje několik způsobů jak tuto strategii aplikovat. </p>
+                            <h4> Support & Resistance</h4>
+                            <p> Tato strategie spočívá v tom, že cena se často vrací k původním levelům a testuje je, ovšem nelze brát za jisté, že cena neprorazí daný level a nebude pokračovat ještě výš nebo níže. Proto je důležité brát ohled na aktuální sentiment trhu, nebo kombinovat tuto strategii s indikátory pro větší přesnost.</p>
+                            <div class="img-container">
+                                <img src="icons/SUPPORT_RESISTANCE_example.png">
+                                <a href="https://www.bybit.com/en/trade/spot/SOL/USDT">Ukázka Supportu & Rezistence </a>
+                            </div>
+                            <h4> Instituční Order Blocks</h4>
+                            <p> Order bloky neboli bloky poptávky fungují velice podobně až téměř identicky jako Support a Resistance bloky. Hlavní rozdíl je v tom, že správně položený order block je založen na začátku nebo konci svíčky, která zaznamenala znatelně mohutnější cenový pohyb. Celkově se ale order bloky používají k předpovědi, kde velcí hráči plánují nakupovat či prodávat, a tam umístit poptávku.</p>
+                            <div class="img-container">
+                                <img src="icons/ORDER_BLOCKS_example.png">
+                                <a href="https://www.bybit.com/en/trade/spot/SOL/USDT">Ukázka Institučních Order blocků </a>
+                            </div>
+                            <h2>Rozdíl mezi Order Bloky a Support & Resistance</h2>
+                            <table>
+                                <tr class="table-header">
+                                    <th></th>
+                                    <th>Support & Resistance</th>
+                                    <th>Order Bloky</th>
+                                </tr>
+                                <tr>
+                                    <td>Původ</td>
+                                    <td>Psychologie obchodníků</td>
+                                    <td>Instituční obchody</td>
+                                </tr>
+                                <tr>
+                                    <td>Výskyt</td>
+                                    <td>Návrat k historickému levelu</td>
+                                    <td>Enormní svíčky</td>
+                                </tr>
+                                <tr>
+                                    <td>Role</td>
+                                    <td>Reakce na potencionální zvrat ceny</td>
+                                    <td>Obchodování zároveň s institucemi</td>
+                                </tr>
+                                <tr>
+                                    <td>Silné stránky</td>
+                                    <td>Velká pravděpodobnost a jednoduší k užití</td>
+                                    <td>Většinou způsobí další cenový extrém</td>
+                                </tr>
+                            </table>
+                            <h4> Fibonacci Retracement</h4>
+                            <p> Tato strategie spočívá v tom, že cena se často vrací k původním levelům a testuje je, ovšem nelze brát za jisté, že cena neprorazí daný level a nebude pokračovat ještě výš nebo níž. Proto je důležité brát ohled na aktuální sentiment trhu, nebo kombinovat tuto strategii s indikátory pro větší přesnost.</p>
+
+                            <div class="img-container">
+                                <img src="icons/FIB_example.png">
+                                <a href="https://www.bybit.com/en/trade/spot/AIXBT/USDT">Ukázka Fibbonaci Retracementu </a>
+                            </div>
+                            <p> Hlavní levely Fibonacci Retracementu se skládají z 0.0%, 23.6%, 38.2%, 50.0%, 61.8% a 100.0%. Ovšem za úplně nejhlavnější a nejspolehlivější se považují následující úrovně: 38.2%, 50% a 61.8%.</p>
+                            <div class="header-container">
+                                <h3>3. Candlestick Patterns </h3>
+                            </div>
+                            <div class="text-container">
+                                <p>Tato strategie je ze všech nejnáročnější. Jedná se o předpovídání obratu pohybu ceny pomocí analyzování posledních svíček na grafu. Ovšem i tato strategie nezaručuje 100% úspěšnost. Tato strategie vyžaduje léta zkušeností a různých pohledů na grafy, jelikož si musíte zapamatovat, jaký typ svíčky naznačuje jakou cenovou budoucnost, která ještě k tomu ani není jistá. K tomu je zapotřebí znát základní strukturu svíčky, která je následující:</p>
+                                <h4>Základní struktura svíčky</h4>
+                                <p>Svíčka se skládá ze 4 částí:</p>
+                                <p>Upper wick - Znázorňuje nejvyšší cenu</p>
+                                <p>Upper body - Horní uzávěr "těla", znázorňuje uzavírací cenu</p>
+                                <p>Lower body - Dolní uzávěr "těla", znázorňuje otevírací cenu (při bearish typu svíčky - uzavírací cenu)</p>
+                                <p>Lower wick - Znázorňuje nejnižší cenu</p>                                
+                                <div class="img-container">
+                                    <img src="icons/candle.png">
+                                </div>
+                                <p>Je to ovšem až lidsky téměř nemožné si zapamatovat všechny různé typy jednotlivých svíček a poté díky nim a celkovým trendům pohybu identifikovat, co se bude dít dále. I přesto níže je přehled základních typů.</p>
+                                <div class="img-container">
+                                    <img src="icons/Candlestick_cheat.png">
+                                    <a href="https://kongmunist.medium.com/candlestick-charts-are-bullshit-5906f3ae87b4">Tabulka základních vzorů různých svíček  </a>
+                                </div>
+                                <p>Existují i patterny celého grafu, pomocí kterých se dá orientovat a předpovědět budoucí cenu. Jedná se ale o poměrně podobný princip, jako u patternů jednotlivých svíček.</p>
+                                <div class="img-container">
+                                    <img src="icons/chart_patterns.png">
+                                    <a href="https://www.quantvue.io/blog/chart-patterns-cheat-sheet">Tabulka základních vzorů různých grafů </a>
+                                </div>
+                                <p>Nejspíše si říkáte, že toho je opravdu hodně a nedá se to všechno zapamatovat. Ano, máte pravdu, nejde si to vše zapamatovat ze dne na den, ani za rok nebudete znát úplně vše. Pouze necelých 20 % obchodníků je úspěšných, bez ohledu na to, zda mají nějaké, či žádné zkušenosti, a pouze 5 % obchodníků se obchodováním živí. Obchodování je buď o tom, že máte nějaké tzv. "inside info", nebo se trefíte zrovna do vhodného produktu ve správný čas, anebo opravdu umíte obchodovat, což umí málo kdo.</p>
+                            </div> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="randomQuotes.js"></script>
+    <script src="particles.js"></script>
+    <script src="swap.js"></script>
+</body>
+</html>

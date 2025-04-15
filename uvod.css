@@ -1,0 +1,61 @@
+/* -----------------*/
+/*   Main Content   */
+/* -----------------*/
+
+
+#web3-panel{
+  box-shadow: 0 0.3rem 1rem rgba(204, 2, 86, 0.5);
+  border: 2px solid rgba(219, 3, 86, 0.1);
+  border-radius: 1rem;
+}
+
+#web2-panel{
+  box-shadow: 0 0.2rem 0.4rem rgba(243, 182, 16, 0.2);
+  border: 2px solid rgba(235, 168, 68, 0.05);
+  border-radius: 1rem;
+}
+
+#web1-panel{
+  box-shadow: 0 0.1rem 0.2rem rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(236, 236, 236, 0.01);
+  border-radius: 1rem;
+}
+
+#web1{
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#web2{
+  background: linear-gradient(to bottom, rgb(216, 155, 76) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#web3{
+  background: linear-gradient(to bottom, rgb(255, 9, 9) 30%, rgb(255, 0, 234) 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+.symbols:hover{
+  border: 1px, solid, rgba(255, 255, 255, 0.1);
+  filter: brightness(110%);
+}
+
+.symbols button{
+  float: none;
+  padding-top: 1rem;
+}
+
+.text-container .symbols p{
+  text-align: center;
+}

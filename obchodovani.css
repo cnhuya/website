@@ -1,0 +1,68 @@
+/* -----------------*/
+/*   Main Content   */
+/* -----------------*/
+
+
+#bybit{
+  background: linear-gradient(to bottom, rgb(255, 150, 30) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#binance{
+  background: linear-gradient(to bottom, rgb(238, 255, 0) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#bitget{
+  background: linear-gradient(to bottom, rgb(17, 255, 195) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#spot{
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#risk{
+  background: linear-gradient(to bottom, rgb(255, 91, 140) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#degen{
+  background: linear-gradient(to bottom, rgb(227, 17, 255) 30%, rgb(39, 39, 39) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#bybit-panel:hover{
+  border: 1px, solid, rgba(255, 150, 30, 0.1);
+}
+
+#binance-panel:hover{
+  border: 1px, solid, rgba(238, 255, 0, 0.1);
+}
+
+
+#bitget-panel:hover{
+  border: 1px, solid, rgba(17, 255, 195, 0.1);
+}
+
+.text-container .symbols p{
+  text-align: center;
+}
+

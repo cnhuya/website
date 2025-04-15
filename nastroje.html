@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vítejte | WEB 3.0</title>
+    <link rel="stylesheet" href="nastroje.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+</head>
+<!-- trosku jeste poupravit strukturu, vic prehlednejsi atd...-->
+<body>
+    <canvas id="animated-background"></canvas>
+    <main id="main">  
+        <div class="panels1 panel">   
+            <a href ="main.html"><img src="/icons/home.png"></a>
+            <h2> Nástroje</h2>   
+        </div>
+        <div class="menu panel">       
+            <h2 class="selected" data-target="panel-verze">Generátor Chytrých Kontraktů</h2>    
+            <h2 data-target="panel-technologie">Simulace Obchodovacího Bota</h2>    
+            <a href="https://github.com/cnhuya/Launcher"><img id="download" src="/icons//download.png"></a>
+        </div>
+        <div class="content">
+            <div class="panel-verze content-panel active">
+                <div class="header-container">
+                    <h3>Úvod </h3>
+                </div>
+                <div class="text-container">
+                    <p>Vítejte ná stránce určené aplikaci Generátor Chytrých Kontraktů. Jak je už možné dle názvu, tato aplikace Vám umožní generovat kod pro chytré kontratky. Jedná se o kontratky, které umožňují vytvořit vlastní tzv. "memecoin" kryptoměnu a o kontrakty, které Vám umožní ukládat jakékoliv data chcete.   Aktuální podporované blockchainové programovací jazyky jsou Solidity a z části Move. Programovací jazyk Rust zatím není podporován. V budoucnu plánuji plánuji přidávat více zajímavých funkcí. </p>
+                    <div class="img-container">
+                        <img id="contract_generator" src="icons/contract generator.png">
+                        <a href="">Ukázka aplikace, která slouží k generování kódu</a>
+                    </div>
+                </div> 
+                <div class="header-container">
+                    <h3>Funkce </h3>
+                </div>
+                <div class="text-container">
+                    <h4>Generátor memecoinů</h4>
+                    <p>Tato funkce slouží k vygenerování kompletně funkčních chytrých kontraktů, které slouží k vytvoření vlastní kryptoměny. V aktuální verzi je podporovaný pouze jazyk Solidity, který je kompletně kompatibilitní se všemi blockchainy, které podporují EVM (Ethereum Virtual Machine). Také si můžete přidat i zajímavé funkce pro vaši kryptoměnu jako například inflaci, poplatky transakcí, a jiné... </p>
+                    <h4>Generátor databáze</h4>
+                    <p>Tato funkce Vám umožní vygenerování zcela funkčního modulu, plně kompatibilního s různými MoveVM blockchainy, různých verzí dle vašich potřeb, který obsahuje dostatečné funkce k ukládání libovolných dat, lze možno vygenerovat modul, který dokonce dokáže ukládát více dat do jedné struktůry např. person (name:, age:, gender:)</p>
+                 </div>
+                 <div class="header-container">
+                    <h3>Tutoriál pro Generátor kódů</h3>
+                </div>
+                <div class="text-container">
+                    <p>Po následném zvolením funkce vygenerování vlastní kryptoměny na nás vyskočí následující okno. V tomto okně si můžeme vybrat libovolné nastavení naší kryptoměny. Zvolíme si vhodný název a poté příslušnou zkratku. Po zvolení těchto vlastností zadáme libovolný počet desetiných míst a následně celkov počet mincí při vzniku kryptoměny.</p>
+                    <p>Následně, aby naše kryptoměna byla originálnější můžeme přidat libovolné funkce, dle naších potřeb tak, aby jsme přidali naší kryptoměně šmrnc. Lze si vybrat z mnoha funkcí. První funkcí jsou poplatky, můžeme buď vybírat poplatky na specifickou adresu, nebo je posílat do takzvané voidové peněženky (spalovací poplatek), ke které nemá nikdo přístup, tím pádem se mince odstraní z oběhu a tím teoreticky se zvýši i samotná cena kryptoměny. Lze si zvolit i funkci spalovací či razitelné. Spalovací funkce umožní komukoliv spálit mince vlastnoručně pomocí funkce Burn, kdežto naopak funkce razitelnosti tedy Mint umožní pouze majiteli tisknout nové mince kryptoměny. Standartem ovšem je neimplementovat razitelnost mincí, jelikož to odpuzuje většinu investorů, kvůli risku rug-pullu, kdy majitel vytiskne velké procento či dokonce násobek nových mincí a prodá je, což zapříčíní obrovský cenový propad. </p>
+                    <p>Pokud chceme můžeme přidat i funkci stakingu, neboli uzamikání mincí za účelem zisku. Jedná se o funkci kdy uživatelé mohou uzamknout libovolné množství mincí, což zapříčíní stabilitu ceny. Uživatelé poté ziskájí libovolné procento, které může majitel při vzniku kryptoměna nastavit.</p>
+                    <div class="img-container">
+                        <img id="contract_generator" src="icons/memecoin_generator_example.png">
+                        <a href="">Ukázka aplikace, která slouží k generování kódu</a>
+                    </div>
+                    <p>Po zvolení všech funkcí a nastavení vlastnosti naší kryptoměny nezbývá nic jiného než kliknout na tlačítko generovat, které nám již vygeneruje zdrojový kód naší kryptoměny, který poté lze nahrát na EVM kompatibilní blockchainy, které podporují standart ERC-20 kryptoměny.</p>
+                    <div class="img-container">
+                        <img id="contract_generator" src="icons/source_code_memecoin.png">
+                        <a href="">Ukázka vygenerovaného zdrojové kódu kryptoměny</a>
+                    </div>
+                    <p>Následně nás čeká již samotné nahrání zdrojového kódu naší kryptoměny na blockchain. Pro tento krok budeme tedy potřebovat kryptoměnovou pěženku s dostatečným množstvím kryptoměny pro dodatečné poplatky při realizaci transakce. K tomuto bodu využijeme stránku RemixIDE, která umožňuje kompilace, kontrolu a i samotné nahrávání chytrých kontraktu na blockchain plně online bez potřeby stahování různých CLI pro různé blockchainy. Vygenerujeme si základní šablonu standartu ERC-20 kryptoměny.</p>
+                    <div class="img-container">
+                        <img id="remixIDE" src="icons/remixIDE.png">
+                        <a href="">Ukázka vygenerovaného zdrojové kódu kryptoměny</a>
+                    </div>
+                    <p>V průzkumníku souborů na stránce RemixIDE by jsme již měli mít vygenerované potřebné soubory. Ve složce contracts poté MyToken.sol, do kterého zkopírujeme náš zdrojový kód kryptoměny. Následně vytvoříme nový soubor Owner.sol v contract složce, a zkopírujeme do ní vygenerování kód Owner.sol, a následně již dojde k zkopírování úpraveného ERC-20 standartu. Přepíšeme tedy soubor ERC20.Sol zkopírováním našeho vygenerovaného kódu pro ERC20.Sol, složka ERC20.Sol se vyskytuje v .deps/npm/@openzeppelin/contracts/token/ERC20/ERC20.sol.</p>
+                    <div class="img-container">
+                        <img id="remixIDEtree" src="icons/remixIDEfiletree.png">
+                        <a href="">Ukázka hierarchie seřazení souborů na remixIDE</a>
+                    </div>
+                    <p>Následně nás čeká zkompilování chytrého kontraktu, které můžeme buď provést velice rychle a efektivně pomocí zkratky Ctrl+s nebo pomocí tlačítka Compile, které můžeme najít v nabídce konkretněji v odrážce Solidity Compiler.</p>
+                    <div class="img-container">
+                        <img id="remixIDEtree" src="icons/remixIDEcompile.png">
+                        <a href="">Ukázka hierarchie seřazení souborů na remixIDE</a>
+                    </div>
+                    <p>Již jsme skoro už o konce. Jediné co ještě musíme provést je samotné nahrání naší kryptoměny na blockchain. To můžeme provést pomocí tlačítka Deploy v menu pod odrážkou Deploy & Run transactions. Po úspešném nahrání kryptoměny na blockchain již můžeme buď testovat funkce naší kryptoměny, a nebo ji plně úvést na kryptoměnový market pomocí vytváření různých likviditních bazénu na různých decentralizovaných platformách. Jelikož pro centralizované burzy, musíte podat buď přihlášku nebo projím jejími striktními podmínky pro zalistování vaší kryptoměny na jejich burze.</p>
+                    <div class="img-container">
+                        <img id="remixIDEfinal" src="icons/remixIDEFINAL.png">
+                        <a href="">Ukázka hierarchie seřazení souborů na remixIDE</a>
+                    </div>
+               </div>
+                 <div class="header-container">
+                    <h3>Tutoriál pro Generátor kódů</h3>
+                </div>
+                <div class="text-container">
+                    <p>Tato funkce Vám vygeneruje zcela funkční chytrý kontrakt, který obsahuje funkce k ukládání libovolných dat, můžete také ukládát více dat do jedné struktůry např. person (name:, age:, gender:)</p>
+                </div>
+                <div class="img-container">
+                    <img id="remixIDEfinal" src="icons/code_contracts.png">
+                    <a href="">Ukázka hierarchie seřazení souborů na remixIDE</a>
+                </div>  
+                <p>Dle naších potřeb si vybereme jednu ze tří dostupných verzí našeho modulu. Simple verze je ta nejjednoduší, jedná se o velice prosté statické ukládání dat. Advanced je už pokročilejší verze, která dokáže ukládat například seznam. Deluxe verze je ovšem nejpokročilější verzí modulu. Dokáže například uložit určitý seznam a přiřadit ho k danému uživateli.</p>
+                <div class="img-container">
+                    <img id="remixIDEfinal" src="icons/code_addvar.png">
+                    <a href="">Ukázka hierarchie seřazení souborů na remixIDE</a>
+                </div> 
+                <p>Po vybrání vhodné verze našeho modulu přidáme již proměnou, kterou chceme ukládát. Lze přidat i více proměných, které mají různé datové typy. Po následném přidání proměnné se nám zaktualizuje náš vygenerování kód pro daný modul.</p> 
+                <p>Bohužel MoveVM blockchainy jsou poměrně novou záležitostí, proto ještě neexistuje tolik nástrojů, budeme muset využít dedikovaných CLI jednotlivých blockchainů. V našem případě využijeme SupraCLI, z několika důvodů. Supra blockchain podporuje velkou propustnost transakcí a transakce na Supra blockchainu jsou také jedny z nejlevnějších.</p>
+                <p>Budeme potřebovat stáhnout a nainstalovat Docker, a poté SupraCLI -> https://docs.supra.com/move/getting-started/supra-cli-with-docker</p>
+                <p>PS: Docker vyžaduje mít povolenou virtualizaci v BIOSu.</p>
+                <div class="img-container">
+                    <img id="remixIDEfinal" src="icons/code_docker.png">
+                    <a href="">Ukázka inicializace SupraCLI a následné vytvoření projektu skrze Windows Powershell</a>
+                </div> 
+                <p>Pokáždém zapnutí dockeru budeme muset inicializovat SupraCLI pomocí příkazu function supra_cli { docker exec -it supra_cli /supra/supra $args } & Set-Alias -Name supra -Value supra_cli, pokud ovšem tedy chceme vytvořit zcela nový projekt použijeme následující příkaz: supra move tool init --package-dir /supra/configs/move_workspace/PROJECT_NAME --name PACKAGE_NAME. Nyní již máme vše potřebné nainstalované.</p>
+                <p>Následně již zkopírujeme náš zdrojový kód modulu a poté i balíčku.</p>
+                <div class="img-container">
+                    <img id="docker" src="icons/code_dockerfiles.png">
+                    <a href="">Ukázka průzkumníka souborů a zvýraznění modulu a balíčku v Dockeru</a>
+                </div> 
+                <p>Pokud jsme úspešně překopírovali dané vygenerované kódy balíčku a modulu, tak se můžeme vrhnout již do samotného nahrání našeho celého balíčku na blockchain a to pomocí následující příkazu: supra move tool publish --package-dir /supra/configs/move_workspace/YOUR_WORKSPACE --profile YOUR_PROFILE --url https://rpc-testnet.supra.com </p>
+                <p>Nyní již lze uložit jednotlivá data do naší databáze uložené v modulu skrze následující příkaz: supra move tool run --function-id YOUR_ADRESS::advanced::storeDATA --args VARIABLE_TYPE:VARIABLE_VALUE --url https://rpc-testnet.supra.com</p>
+                <div class="img-container">
+                    <img id="dockerfinale" src="icons/code_dockerfinale.png">
+                    <a href="">Ukázka zobrazení uložených dat v našem modulu</a>
+                </div> 
+                <p>Po úspešném uložení dat si můžeme buď zobrazit všechna zapsaná data pomocí příkazu:: supra move tool view --function-id YOUR_ADRESS::advanced::viewALLDATA --url https://rpc-testnet.supra.com nebo si můžeme zobrazit jednotlivá data pomocí příkazu: supra move tool view --function-id YOUR_ADRESS::advanced::viewDATA  --args u64:1 --url https://rpc-testnet.supra.com, nutno podotknout, že pokud si chceme zobrazit první zapsané data musíme dát jako ID 0, i když je vyzobrazení uložených dat pod ID 1.
+                </p>
+            </div>
+            <div class="panel-technologie content-panel">
+                <div class="header-container">
+                    <h3>Úvod </h3>
+                </div>
+                <div class="text-container">
+                    <p>Tato stránka slouží k aplikaci, který simuluje obchodování kryptoměň dle speciálních algoritmů, které si uživatelé mohou jakkoliv nastavit. Lze i experimentovat a simulovat obchodování s více algoritmi zároveň.</p>
+
+                    <div class="img-container">
+                        <img id="trading_simulator" src="icons/trading simulator home.png">
+                        <a href="">Ukázka aplikace, která slouží k simulaci obchodování</a>
+                    </div>
+                </div> 
+                <div class="header-container">
+                    <h3>Algoritmy </h3>
+                </div>
+                <div class="text-container">
+                    <h4>DCA</h4>
+                    <p>Tento algoritmus umožňuje simulaci automatického kupování kryptoměny, vámi nastaveným intervalem.  </p>
+                    <h4>Go with/against the flow</h4>
+                    <p>Jedná se o poměrně speciální avšak užitečný algoritmus, který jde s pohybem nebo proti pohybu trhu. Čili pokud nastavíme, že chceme jít s trhem a cena produktu jde směřem výšše, tak automaticky kupujeme kryptoměnu, ovšem pokud jdeme proti trhu tak algoritmus automaticky prodáva.</p>
+                    <h4>Order Buy</h4>
+                    <p>Order buy, neboli poptávka po ceně, je algoritmus, který automaticky koupí či prodá kryptoměnu na Vámi uvedené ceně. </p>
+                    <div class="header-container">
+                        <h3>Tutoriál </h3>
+                </div>
+                <div class="text-container">
+                    <div class="img-container">
+                        <img id="tradingsim1" src="icons/trading_simulator_example.png">
+                        <a href="">Ukázka úvodního uživatelského rozhraní aplikace pro simulaci obchodování</a>
+                    </div> 
+                    <p>Při zvolení jedné ze dvou možných algoritmů se poté uživateli zjeví následující dialogové okno, které lze vidět níže.</p>
+                    <div class="img-container">
+                        <img id="tradingsim2" src="icons/trading_simulator_next.png">
+                        <a href="">Ukázka rozhraní pro simulaci obchodování pomocí DCA algoritmu</a>
+                    </div> 
+                    <p>Zde je vyžadováno od uživatele vyplnění všech dat. Za platný ticker se považuje jakákoliv zkratka kryptoměny + její obchodující pár. Platný ticker tedy může vypadat takto: BTCUSDT. Následně uživatel zadá počáteční kapitál neboli zůstatek. Poté již interval pokud se jedná o DCA algoritmus. Nutno zmínit. že interval je implementován v sekundách a následně částka  neboli obsah, který chceme koupit každým intervalem.</p>
+                    <div class="img-container">
+                        <img id="tradingsim3" src="icons/trading_simulator_grid.png">
+                        <a href="">Ukázka rozhraní pro simulaci obchodování pomocí Grid algoritmu</a>
+                    </div> 
+                    <p>Pokud uživatel chce testovat gridovou obchodovací strategie, požaduje se po něm poté také vyplnění tickeru. Dále se po něm také vyžaduje zadání počátečního kapitálu. Spuštěč nákupu je cenový propad v %, to samé platí pro spouštěče prodeje, ovšem opačně tedy prodání při daném % vzrůstu ceny. Koupit je poté políčko, ve kterém uživatel zadá kolik chce dané kryptoměny nakoupit či prodat.</p>
+                </div> 
+        </div> 
+        </div>
+        </div>
+    </main>
+    <script src="randomQuotes.js"></script>
+    <script src="particles.js"></script>
+    <script src="swap.js"></script>
+</body>
+</html>

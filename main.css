@@ -1,0 +1,159 @@
+/* -----------------*/
+/*   Main Content   */
+/* -----------------*/
+
+
+@media (max-width: 768px) {
+  main {
+      padding-top: 50rem; /* Example change: stack items */
+      /* Add other adjustments for smaller screens */
+  }
+  .welcome {
+    transform: translateY(-16rem);
+  }
+
+  .panels1 {
+    transform: translateY(5rem);
+  }
+
+  .panels2 {
+    transform: translateY(23rem);
+  }
+}
+
+
+
+main {
+  padding-top: 40rem;
+  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  min-height: 100vh; 
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+
+.panels1, .panels2 {
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem; 
+  width: 80%; 
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.source {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+a {
+  color: var(--primary-text-color);
+}
+
+a:hover {
+  color: var(--hover-text-color);
+  cursor: pointer;
+}
+
+.panel:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  filter: brightness(110%);
+}
+
+.panel {
+  width: 100%;
+  padding: 1rem;
+}
+
+.panel-header {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.panel-content {
+  text-align: justify;
+  word-spacing: -0.5px;  /* Start with a small negative value */
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 70%;
+  
+}
+
+#chart{
+  transform: translateY(-5rem);
+  z-index: 10;
+}
+
+.krypto{
+  width: 40rem;
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  transform: translateY(-2rem);
+}
+
+.krypto h6{
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer; 
+}
+
+.krypto img:hover{
+  cursor: pointer; 
+}
+
+
+.krypto:hover{
+  transform: translateY(-2rem) scale(1.1);
+}
+
+.krypto .box{
+  align-items: center;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  margin: 0;
+  gap: 0;
+  z-index: 10;
+}
+
+.krypto .box:hover{
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}

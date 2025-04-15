@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vítejte | WEB 3.0</title>
+    <link rel="stylesheet" href="uvod.css">
+    <link rel="stylesheet" href="/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+</head>
+<!-- trosku jeste poupravit strukturu, vic prehlednejsi atd...-->
+<body>
+    <canvas id="animated-background"></canvas>
+    <main id="main">  
+        <div class="panels1 panel">   
+            <a href ="main.html"><img src="/icons/home.png"></a>
+            <h2> Úvod do Webu 3.0</h2>   
+        </div>
+
+        <div class="menu panel">       
+            <h2 class="selected" data-target="panel-verze">Verze Webu</h2>    
+            <h2 data-target="panel-technologie">Technologie Webu 3.0</h2>    
+            <h2 data-target="panel-možnosti">Možnosti Webu 3.0</h2>    
+        </div>
+        <div class="content">
+            <div class="panel-verze content-panel active">
+                <div class="box-symbols row">
+                    <div id="web1-panel" class="symbols">
+                        <h4 id="web1"> WEB 1.0</h4>
+                        <p> Statický kontent</p>
+                        <p> Žádná/minimální interakce s uživatelem</p>
+                        <p> Sloužící k předávání informací</p>
+                        <p> Základní HTML prvky</p>
+                    </div>
+                    <div id="web2-panel" class="symbols"> 
+                        <h4 id="web2"> WEB 2.0 </h4></a>
+                        <p> Dynamický kontent</p>
+                        <p> Interaguje s uživatelem</p>
+                        <p> Sloužící k předávání informaci mezi uživateli</p>
+                        <p> Pokročitelší prvky, využití Javascriptu a jiné...</p>
+                    </div>
+                    <div id="web3-panel" class="symbols">
+                        <h4 id="web3"> WEB 3.0</h4>
+                        <p> Hyper-dynamický kontent</p>
+                        <p> Umožňuje uživatelům tvořit, sdílet, získat</p>
+                        <p> Propojení IOT technologií do jednoho celku</p>
+                        <p> Velice pokročilá infrastuktůra</p>
+                        <p> Možný výskyt umělé inteligence a 3D objektů</p>
+                   </div>
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                        <h3>WEB 1.0</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Web v podobě, jak ho známe dnes, je velice odlišný od webu před 10 lety. Úplně první verze webových stránek byla označována jako Web verze 1.0, neboli také známá pod přezdívkou „read-only web“. Za Web 1.0 by se dala považovat jakákoliv webová stránka, která je čistě statická – tedy nemění svůj obsah – a vykazuje téměř nulovou interakci mezi webem a uživatelem.Web 1.0 byl základem internetu jako takového. Jednalo se o první „reálnou“ implementaci, která byla volně dostupná široké veřejnosti. Hlavním záměrem této verze bylo pouhé předávání textových informací uživatelům; více funkcí v té době dostupných nebylo. HTML se skládalo pouze z jednoduchých stránek obsahujících text a základní formátování, nic víc. Později však byla přidána i podpora formátů obrázků, což umožnilo vizuálně bohatší prezentaci obsahu.Tato verze webu byla důležitou součástí vývoje internetu přibližně v letech 1990 až 2005. Pro porovnání – v roce 1992 existovalo pouze 10 webových stránek. Koncem roku 1994 už celkový počet webových stránek vyšplhal na přibližně 3 000. V roce 1996 už existovaly přes 2 miliony stránek a právě v tomto roce měl také svůj debut vyhledávač Google, který později změnil způsob, jakým lidé přistupují k informacím na internetu.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                        <h3>WEB 2.0</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Po Webu 1.0 následoval Web 2.0, který se už zaměřoval na aktivní interakci s uživatelem a nesl přezdívky jako „social web“ nebo „participatory web“, tedy web, kde se mohl každý uživatel aktivně zapojit – například prostřednictvím diskuzí, komentářů nebo vytváření vlastního obsahu. Právě z tohoto přístupu vznikl také pojem sociální web, který označuje různé sociální sítě a platformy pro sdílení obsahu. Ovšem za web verze 2.0 lze považovat nejen sociální sítě, ale také například e-shopy, e-maily nebo jakékoliv jiné webové stránky, které jakýmkoliv způsobem interagují s uživatelem – od jednoduchých formulářů až po dynamické aplikace. Hlavními cíli Webu 2.0 bylo umožnit lidem sdílet vlastní myšlenky, názory, textové i mediální soubory a zapojit se do online komunit. Důraz byl kladen na spolupráci, přístupnost a uživatelskou tvorbu obsahu. Dnes však Web 2.0 slouží i k dalším účelům – například k online nakupování, sledování videí, hraní her, nebo jako nástroj pro vzdělávání a komunikaci v reálném čase.</p>
+                    </div>           
+                </div>
+                <div class="box">
+                    <div class="header-container">
+                        <h3>WEB 3.0</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Web 3.0 by měl mít za úkol vyřešit hlavní nedostatky předchozí verze, tedy Webu 2.0. Za největší slabinu se považuje centralizace, a právě proto nese Web 3.0 přezdívky jako „decentralized web“ nebo „blockchain web“. Cílem této nové generace webu je vytvořit prostředí, které bude plně ověřitelné, samosprávné, distribuované a odolné – a zároveň bude umožňovat nativní digitální platby bez potřeby prostředníků. Vývojáři by v ideálním případě neměli poskytovat samotné protokoly – ty by měly být hostovány přímo na decentralizovaných sítích, tedy na blockchainech. I když to nemusí být vždy podmínkou, tento princip je klíčovou součástí vize Webu 3.0. Přestože Web 3.0 přináší mnoho nových možností, stále existují určité technologické a praktické nedostatky, které je třeba vyřešit, než dosáhne svého plného potenciálu. Jednou z největších nadějí tohoto webu jsou tzv. dApps (decentralizované aplikace), které už dnes začínají nabírat na svém vzhledu, komplexnosti a především funkčnosti. Vize Webu 3.0 je velmi rozsáhlá – jednou z jejích součástí může být například Metaverse, tedy plně 3D virtualizovaný svět, kde lidé mohou vzájemně interagovat prostřednictvím VR sluchátek nebo speciálních brýlí pro rozšířenou realitu. Tento koncept slibuje propojení digitálního a reálného světa zcela novým způsobem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-technologie content-panel">
+                <div class ="box">
+                    <div class="header-container">
+                        <h3>BLOCKCHAIN</h3>
+                    </div>
+                    <div class="text-container">
+                        <p>Jedná se o poměrně moderní technologii, která slouží k ukládání dat do volně dostupné a decentralizované databáze. Blockchain je také specifický v tom, že data nikdy nemaže, dokud mu to není explicitně řečeno, což znamená, že všechna data či transakce jsou dohledatelná. To ovšem není vše – data jsou navíc speciálně chráněna proti neoprávněnému zásahu.</p>
+
+                        <h4>A kdo vlastně stojí za touto výjimečnou moderní technologií?</h4>
+                        <p>Nikdo to neví jistě. Ano, autor je neznámý, ovšem uvádí se, že za vznikem stojí jméno Satoshi Nakamoto. V Japonsku žije člověk se stejným jménem, ten ale jakoukoliv spojitost popřel. V roce 2008 publikoval Satoshi koncept blockchainu, který měl sloužit k veřejně distribuovanému záznamu transakcí kryptoměny Bitcoin. Nešlo však o úplně nový nápad – jednalo se o vyřešení problémů již rozpracovaného konceptu a jeho následné dokončení, navazující na práci autorů Stuarta Habera, W. Scotta Stornetty a Davida Bayera.</p>
+                        
+                        <h4>Jak jsou data na blockchainu chráněna?</h4>
+                        <p>Každá transakce je zaznamenána pomocí hashovacího kódu v bloku. Daný blok je poté duplikovaně uložen na několika uzlech sítě, které jsou vzájemně propojené. Pokud by někdo chtěl transakci na blockchainu zfalšovat, musel by přepsat digitální podpis dané transakce. Háček je v tom, že by musel přepsat i všechny ostatní podpisy v paralelně navázaných kopiích. To znamená, že by útočník musel vlastnit více než 51 % všech uzlů sítě, aby si tuto změnu „odhlasoval“. Z ekonomického hlediska je toto provedení téměř nemožné.</p>
+                        
+                        <h4>Princip blockchainu</h4>
+                        <p>Blockchain se skládá ze dvou již zmíněných částí: transakcí a bloků. Transakce mohou obsahovat jakákoliv data – nemusí jít pouze o kryptoměnové platby, ale třeba i o obyčejný záznam. Transakce jsou následně zapsány do bloku, který je určen pro konkrétní časový interval. Bloky uchovávají informace o těchto transakcích. Jednotlivé bloky jsou vytvářeny těžaři, kteří k tomu využívají speciální software nebo hardware. Bloky se pak volně předávají od uzlu k uzlu podle aktuálního spojení mezi nimi.</p>
+                        
+                        <h4>Záznam</h4>
+                        <p>Jak už bylo zmíněno, záznam blockchainu je kompletně decentralizovaný a volně dostupný. Díky tomu je možné si prohlédnout všechny jednotlivé bloky, transakce, nebo dokonce otevřené kódy chytrých kontraktů pomocí tzv. blockchainového průzkumníka.</p>
+                        <div class="img-container">
+                            <img src="icons/explorer_example.png">
+                            <a href="https://basescan.org/">Ukázka blockchainového průzkumníka blockchainu Base</a>
+                        </div>
+                        <h4>Problém vícenásobného utrácení</h4>
+                        <p>Jedná se o problém, kdy dva či více uzlů vydají ve stejný okamžik pokyn k transakci, která přesouvá více peněz, než je aktuální zůstatek. Pokud by k tomuto stavu skutečně došlo, mohlo by dojít k duplikování nejen samotné transakce, ale i dané kryptoměny. To by vedlo k nekonzistenci zůstatků na účtech – tedy k vícenásobnému odečtení stejné částky. Následkem by byla ztráta důvěry v síť a její potenciální zánik. Každá kryptoměna tento problém řeší jinak. Některé využívají technologii Proof of Work (hlasování na základě výpočetního výkonu), jiné zase Proof of Stake (hlasování podle podílu vlastnictví kryptoměny).</p>
+                        
+                        <h4>Odměny pro validátory bloků</h4>
+                        <p>Validátoři bloků musí obdržet určitou formu finanční odměny, aby pro ně bylo ověřování bloků výhodné a motivující. V případě Bitcoinu jsou těžaři odměňováni dvěma způsoby: předem definovanou odměnou za vytěžený blok a transakčními poplatky od uživatelů sítě.</p>
+                         <div class="img-container">
+                            <img src="icons/block_reward_example.png">
+                            <a href="https://sonicscan.org/">Ukázka odměny pro těžaře na Sonic blockchainu v podobě nativní kryptoměny Sonic</a>
+                        </div>
+                   </div>
+                 </div>
+                <div class="header-container">
+                    <h3>CHYTRÉ KONTRAKTY</h3>
+                </div>
+                <div class="text-container">
+                    <p>Pod termínem chytrý kontrakt si lze představit balíček kódu, který je následně nahrán na blockchain, odkud je poté spouštěn. Chytrý kontrakt může sloužit k mnoha různým účelům. Každý blockchain implementuje funkce chytrých kontraktů trochu odlišně – některé umožňují uživatelům vytvářet vlastní kryptoměny přímo na daném blockchainu prostřednictvím chytrých kontraktů, jiné zase nabízejí jednoduché funkce pro ukládání dat, která lze i zpětně přepisovat. Každý blockchain rovněž používá různé programovací jazyky. Mezi nejčastěji používané patří Move, Solidity a Rust.</p>
+
+                    <div class="box-symbols row">
+                        <div class="symbols">
+                            <h4> SOLIDITY</h4>
+                            <p> Ethereum blockchain a EVM kompatibilní sítě</p>
+                            <p> Podobný JavaScriptu či C#</p>
+                            <p class="positive"> Velká komunita, online IDE Remix</p>
+                            <p class="positive"> Poměrně jednoduchý </p>
+                            <p class="negative"> Bezpečnost</p>
+                            
+                        </div>
+                        <div class="symbols"> 
+                            <h4> MOVE </h4></a>
+                            <p> Vhodné pro budoucí obchodníky</p>
+                            <p class="negative"> Větší riziko</p>
+                            <p class="positive"> Větší zisk</p>
+                            <a href="obchodovani.html"><button>Zjistit více</button></a>
+                        </div>
+                        <div class="symbols">
+                            <h4> RUST</h4>
+                            <p> Vhodné pro prográmátory</p>
+                            <p class="positive"> Potencionální pěněžní zisk</p>
+                            <p class="positive"> ??????</p>
+                            <a href="nastroje.html"><button>Zjistit více</button></a>
+                       </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="icons/smart_contract_example.png">
+                        <a href="https://remix.ethereum.org/">Ukázka kodu chytrého kontraktu v jazyce Solidity v prostředí Remix IDE</a>
+                    </div>
+                </div>
+            <div class=box>
+                <div class="header-container">
+                    <h3>DECENTRALIZOVANÉ KRYPTO PENĚŽENKY</h3>
+                </div>
+                <div class="text-container">
+                    <p> Pěnězenky v kryptosvětě fungují jako bankovní trezory v reálném světě. Největší rozdíl je v tom, že blockchainové peněženky jsou kompletně transparetní jako vše na blockchainu. Což znamená, že kdokoliv si může jednoduše zjistit vlastnictví kryptoměn jednotlivé peněženky či celkovou hodnotu adresy peněženky. Ke každé blockchainové peněžence je přiřazen soukromý klíč skládájící se ve většina případu z různě vygenerovaných slov, ke kterému dojde při incializaci/vytvoření peněženky. Jsou také dva typy pěneženek, hot a cold peněženky. Hot peněženky jsou kompletně digitální mezitím cold peněženky jsou fyzické, obě varianty mají sve a proti, z bezpečnostního hlediska, ale cold peněženky vítězí. </p>
+                    <div class="img-container">
+                        <img id="wallet-img" src="icons/wallet_example.png">
+                        <a href="https://metamask.io/">Ukázka hot peněženky MetaMask</a>
+                    </div>
+                </div>
+             </div>   
+        </div>  
+            <div class="panel-možnosti content-panel">
+                <div class="box-symbols row">
+                    <div class="symbols">
+                        <h4> INVESTOVÁNÍ</h4>
+                        <p> Zajištění pasivní příjmu</p>
+                        <p class="positive"> Menší riziko</p>
+                        <p class="negative"> Menší zisk</p>
+                        <a href="investovani.html"><button>Zjistit více</button></a>
+                        
+                    </div>
+                    <div class="symbols"> 
+                        <h4> OBCHODOVÁNÍ </h4></a>
+                        <p> Vhodné pro budoucí obchodníky</p>
+                        <p class="negative"> Větší riziko</p>
+                        <p class="positive"> Větší zisk</p>
+                        <a href="obchodovani.html"><button>Zjistit více</button></a>
+                    </div>
+                    <div class="symbols">
+                        <h4> BUDOVÁNÍ</h4>
+                        <p> Vhodné pro prográmátory</p>
+                        <p class="positive"> Potencionální pěněžní zisk</p>
+                        <p class="positive"> ??????</p>
+                        <a href="nastroje.html"><button>Zjistit více</button></a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="randomQuotes.js"></script>
+    <script src="particles.js"></script>
+    <script src="swap.js"></script>
+</body>
+</html>
