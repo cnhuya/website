@@ -463,12 +463,12 @@ body {
   width: 3rem;
   height: 3rem;
   float: right;
-  transform: translate(37.5rem, 0.25rem);
+  transform: translate(7.5rem, 0.5rem);
   animation: pulse 2s infinite ease-in-out; 
 }
 
 #download:hover{
-  transform: translate(37.5rem, 0rem);
+  transform: translate(7.5rem, 0rem);
   animation: pulse 2s infinite ease-in-out; 
 }
 
