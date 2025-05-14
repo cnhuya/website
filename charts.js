@@ -85,10 +85,20 @@ async function fetchData(module) {
     if (!data.result?.[0]?.database) throw new Error("Invalid data structure");
 
     const database = data.result[0].database;
-    const seriesData = database.map(item => ({
-      x: new Date(parseInt(item.timestamp) * 1000),
-      y: parseFloat(item.price / Math.pow(10, 3))
-    }));
+
+let seriesData;
+
+if (module === "SolanaOracle") {
+  seriesData = database.map(item => ({
+    x: new Date(parseInt(item.timestamp) * 1000),
+    y: parseFloat(item.price / Math.pow(10, 3)) 
+  }));
+} else {
+  seriesData = database.map(item => ({
+    x: new Date(parseInt(item.timestamp) * 1000),
+    y: parseFloat(item.price / Math.pow(10, 2)) 
+  }));
+}
 
     let chart_name;
     switch (module) {
