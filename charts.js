@@ -97,7 +97,7 @@ async function getConfig(module) {
 async function fetchData(module) {
   try {
     // Use the local server proxy instead of calling Supra RPC directly
-    const response = await fetch(`http://localhost:3000/view?module=${module}`, {
+    const response = await fetch(`https://oracle-1-e323.onrender.com/view?module=${module}`, {
       method: 'GET',
       headers: { "Content-Type": "application/json" }
     });
