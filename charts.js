@@ -100,7 +100,7 @@ async function fetchData(module) {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        "function": `0x5658f4d45001f71897f4a9d46a3cf05a651a2821568032553ca6063a2ea9601e::${module}::viewALLDATA`,
+        "function": `0x9763cb18773902980a76c48818e48d7c2cd3470d120367d4333ebcfe340169ec::${module}::viewALLDATA`,
         "type_arguments": [],
         "arguments": []
       })
