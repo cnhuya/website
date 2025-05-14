@@ -68,31 +68,6 @@ function initChart() {
 
 // Zdroj na api requesty
 // https://developer.mozilla.org/en-US/docs/Web/API/Request
-async function getConfig(module) {
-    try {
-      const response = await fetch('https://rpc-testnet.supra.com/rpc/v2/view', {
-        method: 'POST',
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          "function": `0xc698c251041b826f1d3d4ea664a70674758e78918938d1b3b237418ff17b4020::${module}::viewCONFIG`,
-          "type_arguments": [],
-          "arguments": []
-        })
-      });
-  
-      if (!response.ok) throw new Error(`API error: ${response.status}`);
-      
-      const data = await response.json();   
-      let config = data.result[0]
-  
-      return config;
-    } catch (error) {
-      console.error(`Error loading ${module}:`, error);
-      alert(`Chyba při načítání dat: ${error.message}`);
-    }
-  }
-  getConfig("Ethereum");
-
 
 async function fetchData(module) {
   try {
@@ -109,11 +84,7 @@ async function fetchData(module) {
 
     if (!data.result?.[0]?.database) throw new Error("Invalid data structure");
 
-    let config = await getConfig(module);
-    console.log(config);
-
     const database = data.result[0].database;
-
     const seriesData = database.map(item => ({
       x: new Date(parseInt(item.timestamp) * 1000),
       y: parseFloat(item.price / Math.pow(10, config.decimals))
