@@ -70,7 +70,7 @@ function initChart() {
 // https://developer.mozilla.org/en-US/docs/Web/API/Request
 async function getConfig(module) {
     try {
-      const response = await fetch('https://rpc-testnet.supra.com/rpc/v1/view', {
+      const response = await fetch('https://rpc-testnet.supra.com/rpc/v2/view', {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -96,7 +96,7 @@ async function getConfig(module) {
 
 async function fetchData(module) {
   try {
-    const response = await fetch('https://rpc-testnet.supra.com/rpc/v1/view', {
+    const response = await fetch('https://rpc-testnet.supra.com/rpc/v2/view', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
