@@ -96,36 +96,37 @@ async function getConfig(module) {
 
 async function fetchData(module) {
   try {
-    const response = await fetch('https://rpc-testnet.supra.com/rpc/v2/view', {
-      method: 'POST',
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        "function": `0x9763cb18773902980a76c48818e48d7c2cd3470d120367d4333ebcfe340169ec::${module}::viewALLDATA`,
-        "type_arguments": [],
-        "arguments": []
-      })
+    // Use the local server proxy instead of calling Supra RPC directly
+    const response = await fetch(`http://localhost:3000/view?module=${module}`, {
+      method: 'GET',
+      headers: { "Content-Type": "application/json" }
     });
 
     if (!response.ok) throw new Error(`API error: ${response.status}`);
-    
-    const data = await response.json();
+
+    const result = await response.json();
+    const data = result.data;
+
     if (!data.result?.[0]?.database) throw new Error("Invalid data structure");
+
     let config = await getConfig(module);
     console.log(config);
+
     const database = data.result[0].database;
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+
     const seriesData = database.map(item => ({
       x: new Date(parseInt(item.timestamp) * 1000),
       y: parseFloat(item.price / Math.pow(10, config.decimals))
     }));
 
     let chart_name;
-    switch(module) {
+    switch (module) {
       case "BitcoinOracle": chart_name = "Cena Bitcoinu"; break;
       case "EthereumOracle": chart_name = "Cena Etherea"; break;
       case "SolanaOracle": chart_name = "Cena Solany"; break;
       default: chart_name = "Cena";
     }
+
     chart.updateOptions({
       series: [{
         name: chart_name,
@@ -133,6 +134,7 @@ async function fetchData(module) {
       }],
       title: { text: chart_name }
     });
+
   } catch (error) {
     console.error(`Error loading ${module}:`, error);
     alert(`Chyba při načítání dat: ${error.message}`);
