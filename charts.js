@@ -87,7 +87,7 @@ async function fetchData(module) {
     const database = data.result[0].database;
     const seriesData = database.map(item => ({
       x: new Date(parseInt(item.timestamp) * 1000),
-      y: parseFloat(item.price / Math.pow(10, config.decimals))
+      y: parseFloat(item.price / Math.pow(10, 2))
     }));
 
     let chart_name;
